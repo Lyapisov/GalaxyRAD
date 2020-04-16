@@ -1,0 +1,15 @@
+body {
+    height: 2000px;
+}
+
+.navbar-light {
+    background-color: #b0d4e0;
+}
+
+.navigationBar a{
+    color: #222222;
+}
+
+.navigationBar a:hover{
+    color: #9d000c;
+}

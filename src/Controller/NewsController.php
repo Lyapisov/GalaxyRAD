@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/")
+ * @Route("/news")
  */
 class NewsController extends AbstractController
 {
@@ -20,7 +20,7 @@ class NewsController extends AbstractController
      */
     public function index(NewsRepository $newsRepository): Response
     {
-        return $this->render('news/index.html.twig', [
+        return $this->render('news/index.html.twig',[
             'news' => $newsRepository->findAll(),
         ]);
     }
