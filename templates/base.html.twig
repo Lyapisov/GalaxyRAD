@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<html lang="ru" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    {% block stylesheets %}<link rel="stylesheet" href="{{ asset('asset/css/News.css')  }}">{% endblock %}
+</head>
+
+{% block navigation %}
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a href="/" class="navbar-brand offset-md-1">
+            <img src="https://image.flaticon.com/icons/png/512/43/43160.png"
+                    width="30" height="30" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                area-controls="navbarSupportedContent" area-expanded="false" area-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="/" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="/" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Мастерклассы</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">ИЗО</a>
+                        <a class="dropdown-item" href="#">Лепка</a>
+                        <a class="dropdown-item" href="#">Иностранный</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Фотогаллерея</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+{% block title %}{% endblock %}
+{% block body %}{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+{% block javascripts %}{% endblock %}
 </html>

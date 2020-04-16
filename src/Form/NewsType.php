@@ -17,6 +17,8 @@ class NewsType extends AbstractType
             ->add('image')
             ->add('category')
             ->add('visibility')
+            ->add('author')
+            ->add('date')
         ;
     }
 

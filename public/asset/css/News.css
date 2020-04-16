@@ -13,3 +13,8 @@ body {
 .navigationBar a:hover{
     color: #9d000c;
 }
+
+.img-right {
+    margin: 0 0 10px 0px;
+    padding: 0;
+}

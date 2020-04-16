@@ -31,6 +31,14 @@
                 <th>Visibility</th>
                 <td>{{ news.visibility }}</td>
             </tr>
+            <tr>
+                <th>Author</th>
+                <td>{{ news.author }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{{ news.date ? news.date|date('Y-m-d') : '' }}</td>
+            </tr>
         </tbody>
     </table>
 
